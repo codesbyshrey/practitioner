@@ -11,18 +11,11 @@ from typing import *
 
 start_time = time.time()
 
-
 def solve():
     pass
 
 def main():
-    yesoryes = input()
-    yesoryes = yesoryes.upper()
-    if yesoryes == "YES":
-        print("YES")
-    else:
-        print("NO")
-
+    pass
 
 if __name__ == "__main__":
     if os.path.exists("data.in"):
