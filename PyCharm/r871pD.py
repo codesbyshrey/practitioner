@@ -14,7 +14,7 @@ start_time = time.time()
 def solve(num, goal):
     if goal > num:
         print("NO")
-    if num % goal == 0:
+    elif num % goal == 0:
         num //= goal
         while num % 2 == 0:
             num //= 2

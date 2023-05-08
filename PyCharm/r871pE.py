@@ -8,27 +8,36 @@ from io import BytesIO, IOBase
 from functools import reduce
 from typing import *
 
-
 start_time = time.time()
 
-def solve(num, goal):
-    if goal > num:
-        print("NO")
-    if num % goal == 0:
-        num //= goal
-        while num % 2 == 0:
-            num //= 2
-        if num == 1:
-            print("YES")
-        else:
-            print("NO")
-    else:
-        print("NO")
+def solve(grid, visited, i, j):
+    #solve in this case will represent Depth First Search implementation
+    #DFS is recursive
+    if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or visited[i][j] or grid[i][j] == 0:
+        return 0
+    visited[i][j] = True
+    volume = grid[i][j]
+    volume += solve(grid, visited, i+1, j)
+    volume += solve(grid, visited, i-1, j)
+    volume += solve(grid, visited, i, j+1)
+    volume += solve(grid, visited, i, j-1)
+    return volume
 
 def main():
     # pass
-    num, goal = map(int, input().split())
-    solve(num, goal)
+    num, depth = map(int, input().split())
+    grid = []
+    for _ in range(num):
+        row = list(map(int, input().split()))
+        grid.append(row)
+    max_volume = 0
+    visited = [[False for _ in range(depth)] for _ in range(num)]
+    for i in range(num):
+        for j in range(depth):
+            if not visited[i][j] and grid[i][j] > 0:
+                volume = solve(grid, visited, i, j)
+                max_volume = max(max_volume, volume)
+    print(max_volume)
 
 if __name__ == "__main__":
     if os.path.exists("data.in"):
