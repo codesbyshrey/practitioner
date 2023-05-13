@@ -11,24 +11,13 @@ from typing import *
 
 start_time = time.time()
 
-def solve(num, goal):
-    if goal > num:
-        print("NO")
-    if num % goal == 0:
-        num //= goal
-        while num % 2 == 0:
-            num //= 2
-        if num == 1:
-            print("YES")
-        else:
-            print("NO")
-    else:
-        print("NO")
+def solve():
+    print("Testcases I/O Works")
 
 def main():
-    # pass
-    num, goal = map(int, input().split())
-    solve(num, goal)
+    # Inputs / Parameters?
+    # Solution Logic
+    solve()
 
 if __name__ == "__main__":
     if os.path.exists("data.in"):
