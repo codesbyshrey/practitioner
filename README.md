@@ -1,2 +1,2 @@
-# Reference Repository
- A larger repository to store resources, boilerplate code, and practice with Git.
+# Practice Repository
+Relegating Tutorial Hell to this repository. FreeCodeCamp links, and other random pursuits that don't require their own individual repository will be placed here for the time being.
