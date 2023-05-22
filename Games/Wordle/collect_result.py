@@ -1,5 +1,5 @@
 import re
-def colect_result():
+def collect_result():
     result = input("Your Result: (_/?/!)")
     match = re.match(r'^[!?_]{5}$', result)
     if not match:
