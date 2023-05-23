@@ -1,0 +1,20 @@
+<svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg" class="wsc-svg-logo-mobiletrans-square">
+<g filter="url(#mobiletrans-square-filter0_i)">
+<rect y="0.5" width="128" height="128" rx="29.2" fill="#0E1028"/>
+<path d="M29.1051 29.605C29.1051 27.3377 30.9431 25.4998 33.2103 25.4998H72.2102C74.4774 25.4998 76.3154 27.3377 76.3154 29.605V82.9732C76.3154 85.2405 74.4775 87.0785 72.2102 87.0785H33.2104C30.9431 87.0785 29.1051 85.2405 29.1051 82.9732V29.605Z" fill="#129BFF"/>
+<path d="M51.6835 46.0266C51.6835 43.7594 53.5215 41.9214 55.7887 41.9214H94.7886C97.0558 41.9214 98.8938 43.7594 98.8938 46.0266V99.3949C98.8938 101.662 97.0558 103.5 94.7886 103.5H55.7887C53.5215 103.5 51.6835 101.662 51.6835 99.3949V46.0266Z" fill="#00E0B8"/>
+<path d="M76.315 41.9214V82.9739C76.315 85.2411 74.477 87.0791 72.2097 87.0791H51.6835V46.0266C51.6835 43.7594 53.5215 41.9214 55.7887 41.9214H76.315Z" fill="white"/>
+</g>
+<defs>
+<filter id="mobiletrans-square-filter0_i" x="0" y="0.5" width="128" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="0.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0"/>
+<feBlend mode="darken" in2="shape" result="effect1_innerShadow"/>
+</filter>
+</defs>
+</svg>
