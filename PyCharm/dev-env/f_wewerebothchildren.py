@@ -13,32 +13,23 @@ start_time = time.time()
 
 def solve():
     print("Testcases I/O Works")
+    # this problem is just a greatest common denominator
 
 def main():
     # Inputs / Parameters and basic solution logic
     # don't forget to pass in vars to solve as needed
-    # problem D is effectively a find longest subsequence
-    n, k = map(int, input().split())
-    a = list(map(int, input().split()))
+    frogs = int(input())
+    hops = list(map(int, input().split()))
+    hops.sort()
+    trap_area = []
+    for hop in hops:
+        if hop <= frogs:
+            if max(hops) % hop != 0:
+                trap_area.append(hop)
 
-    # since we can rearrange, we might as well sort
-    a.sort()
-    result = n # subtract from total number of existing problems
-    for i in range(n):
-        # two pointer approach
-        left = i
-        right = n-1
-
-        while left < right:
-            mid = (left+right)//2
-            if a[mid] - a[i] <= k:
-                left = mid + 1
-            else:
-                right = mid - 1
-        if a[left] - a[i] <= k:
-            result = min(result, n-(left-i+1))
-    print(result)
-    # solve()
+    result = frogs - len(trap_area)
+    print(trap_area, result)
+    #solve()
 
 if __name__ == "__main__":
     if os.path.exists("data.in"):

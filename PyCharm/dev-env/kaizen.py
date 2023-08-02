@@ -13,17 +13,31 @@ start_time = time.time()
 
 def solve():
     print("Testcases I/O Works")
+    # this problem is just a greatest common denominator
 
 def main():
-    # Inputs / Parameters?
-    # Solution Logic
-    solve()
+    # Inputs / Parameters and basic solution logic
+    # don't forget to pass in vars to solve as needed
+    frogs = int(input())
+    hops = list(map(int, input().split()))
+    hops.sort()
+    trap_area = []
+    for hop in hops:
+        if hop <= frogs:
+            if max(hops) % hop != 0: # wrong logic on GCD
+                trap_area.append(hop)
+
+    result = frogs - len(trap_area)
+    if result == 1: result = 0
+    # print(trap_area, result)
+    #solve()
 
 if __name__ == "__main__":
     if os.path.exists("data.in"):
         sys.stdin = open("data.in", "r")
         sys.stdout = open("data.out", "w")
 
+    # takes care of initial line input for # of responses
     testcases = int(input())
     for i in range(testcases):
         main()

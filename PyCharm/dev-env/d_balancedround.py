@@ -23,21 +23,14 @@ def main():
 
     # since we can rearrange, we might as well sort
     a.sort()
-    result = n # subtract from total number of existing problems
-    for i in range(n):
-        # two pointer approach
-        left = i
-        right = n-1
+    # result = n # subtract from total number of existing problems
+    dp = [1] * n
+    for i in range(1, n):
+        for j in range(i):
+            if a[i] - a[j] <= k:
+                dp[i] = max(dp[i], dp[j]+1)
+    print(n - max(dp))
 
-        while left < right:
-            mid = (left+right)//2
-            if a[mid] - a[i] <= k:
-                left = mid + 1
-            else:
-                right = mid - 1
-        if a[left] - a[i] <= k:
-            result = min(result, n-(left-i+1))
-    print(result)
     # solve()
 
 if __name__ == "__main__":

@@ -13,15 +13,13 @@ start_time = time.time()
 
 def solve(chessboard):
     # print("Testcases I/O Works")
+    words = ""
     for i in range(8):
-        words = ""
         for j in range(8):
             if chessboard[i][j] != ".":
                 words += chessboard[i][j]
-                words = words.strip()
-        if len(words) > 0:
-            print(words)
-            break
+    if len(words) > 0:
+        print(words)
 
 def main():
     # Inputs / Parameters and basic solution logic
