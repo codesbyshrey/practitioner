@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title> Text Encryptor</title>
+</head>
+<body>
+     
+     <div class="container">
+          <h1> codesbyshrey Text Encryptor</h1>
+          <label for="message"> Message : </label>
+          <textarea id="message" rows="5" cols="50">This is the message to encrypt #enigma. Don't forget to subscribe to the AsmrProg channel who inspired this from their 100 days of Javascript, Day 47. </textarea>
+          <label for="key">Key : </label>
+          <input type="text" id="key" value="codesbyshrey" size="50">
+          <div class="buttons">
+               <button id="enc-btn"> Encrypt Me </button>
+               <button id="dec-btn"> Decrypt Me </button>
+          </div>
+
+          <h2> Results: </h2>
+          <div id="result"></div>
+     </div>
+
+     <script src="script.js">
+          // code goes over here
+     </script>
+</body>
+</html>
