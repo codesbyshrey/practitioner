@@ -5,6 +5,8 @@ const fs = require('fs');
 const readline = require('readline');
 const openai = new OpenAI({ apiKey: process.env.API_KEY })
 
+// JSONL format - each line is a valid JSON object
+// For fine-tuning pruposes, follow conversation format with alternating user and assistant messages --> creates context in advance for what we need
 async function validateJSONL(file) {
      const fileStream = fs.createReadStream(file);
 
@@ -13,6 +15,7 @@ async function validateJSONL(file) {
           crlfDelay: Infinity,
      });
 
+     // ITERATE THROUGH EACH READLINE TO DETERMINE JSON VALIDITY
      let lineNumber = 0;
      for await (const line of rl) {
           lineNumber++;
@@ -32,11 +35,13 @@ async function validateJSONL(file) {
 async function uploadDataset() {
      if (await validateJSONL('dataset.jsonl')) {
           const status = await openai.files.create({
+               // await filestream to create a readstream for the dataset
                file: fs.createReadStream('dataset.jsonl'),
                purpose: 'fine-tune',
           });
           console.log(status);
           return status.id;
+          // Return this ID for the fine-tuning now that you've created fine-tune training file for OpenAI
      }
      return null;
 }
@@ -63,6 +68,7 @@ async function getModelCompletion(modelId) {
           model: modelId,
      });
      console.log(completion.choices[0].message.content);
+     // Read first choice message content from array of choices that it could possibly give you. Likely further ways to adjust this.
 }
 
 // Uncomment the function you want to run based on the step you're at:
