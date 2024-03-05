@@ -80,6 +80,6 @@ async function getModelCompletion(modelId) {
 // Step 3: Get a completion. Replace 'YOUR_FINE_TUNED_MODEL_ID' with the model ID from the email.
 
 
-// Last step is to expose function via API so that users can use it to upload their own dataset or leverage a particular model that you have trained for them.
+// Last step is to expose function via API so that users can use it to upload their own dataset or leverage a partiwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwcular model that you have trained for them.
 
 // Can use it to build a model with specific business logic, advanced chat bot, more specific content creation, and improved responses for current events since we have a knowledge gap following 2021 or so.
