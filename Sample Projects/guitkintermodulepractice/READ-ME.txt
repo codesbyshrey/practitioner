@@ -1,0 +1,8 @@
+Playing around with the 'tkinter' python GUI module........
+
+Code demonstrates the following features:
+-	Pop-up message box using ‘messagebox.showinfo()’ feature to display ‘Hello World'.
+-	Canvas background feature (big blue square).
+-	An ‘arc’ shape displayed on top of the blue canvas using ‘canvas.create_arc()’ feature.
+-	Changing the color of a button during runtime, once another button has been pressed.
+-	Create a new button during runtime, once another button has been pressed. 
