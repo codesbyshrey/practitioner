@@ -1,0 +1,10 @@
+{
+  "name": "js-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.mjs",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.1"
+  }
+}
+
