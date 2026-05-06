@@ -1,3 +1,13 @@
+# Reactwpy
+
+React/Python hybrid practice project with a Python app entrypoint.
+
+## Revisit Notes
+
+- Python app entrypoint `app.py` is present.
+
+## Original README
+
 <!-- https://medium.com/@ash_computational_qm/reactpy-building-dynamic-frontend-applications-with-python-de92d9e95bce -->
 
 pip install reactpy --> can choose custom backends

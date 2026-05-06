@@ -1,3 +1,15 @@
+# Data Structures And Algorithms
+
+Data structures and algorithms practice across JavaScript, Python, and PyCharm-era contest work.
+
+## Contents
+
+- `Javascript`: JavaScript algorithm practice.
+- `PyCharm`: PyCharm-era algorithm and contest practice.
+- `Python`: Python algorithm practice.
+
+## Original README
+
 # Data Structures and Algorithms
 Technical Interview Preparation
 Problem Sets, Solutions, Explanations (Leetcode Submissions)

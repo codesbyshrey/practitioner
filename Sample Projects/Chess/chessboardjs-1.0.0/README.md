@@ -1,3 +1,13 @@
+# Chessboardjs 1.0.0
+
+Project or practice folder preserved from the original practitioner tree.
+
+## Revisit Notes
+
+- Node dependencies are not vendored; reinstall them locally before running this project.
+
+## Original README
+
 # chessboard.js
 
 chessboard.js is a JavaScript chessboard component. It depends on [jQuery].

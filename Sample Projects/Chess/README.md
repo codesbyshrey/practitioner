@@ -1,3 +1,17 @@
+# Chess
+
+Chess project with local assets and chessboard.js dependency source.
+
+## Contents
+
+- `chessboardjs-1.0.0`: Project or practice folder preserved from the original practitioner tree.
+
+## Revisit Notes
+
+- Static frontend entrypoint `index.html` is present.
+
+## Original README
+
 Inspired by:
 
 https://youtu.be/XaFYLIEq4E8?si=cV9gsV1eZIZYqUHg

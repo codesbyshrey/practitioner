@@ -1,3 +1,21 @@
+# Cursor
+
+Agent and IDE experiments spanning Python, Go, Java, and JavaScript implementations.
+
+## Contents
+
+- `java-agent`: Java agent experiment under Cursor.
+- `js-agent`: JavaScript agent experiment under Cursor.
+
+## Revisit Notes
+
+- Python dependency metadata is present in `requirements.txt`.
+- Go module metadata is present in `go.mod`.
+- Static frontend entrypoint `index.html` is present.
+- `index.html`, `script.js`, and `styles.css` form the memory-card game generated during Cursor/agent experimentation.
+
+## Original README
+
 # Multi-Language Code-Editing Agent
 
 This project is a small, fully functional **code-editing agent** implemented in **Go, Python, JavaScript (Node), and Java**, inspired by the Amp blog post “How to Build an Agent”. Each implementation connects to Anthropic’s Claude models and exposes tools to **read, list, and edit files on your local filesystem**, so you can collaborate with Claude directly on your codebase from the terminal.
@@ -231,4 +249,3 @@ Below are per-language instructions as collapsible sections. Pick the language y
   This version talks directly to the Claude HTTP API via OkHttp but uses the same conversation + tools pattern.
 
 </details>
-

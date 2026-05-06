@@ -1,3 +1,9 @@
+# 30Days
+
+30-day JavaScript algorithm practice set.
+
+## Original README
+
 # Leetcode 30 Days of Javascript Challenge
 From May 5th 2023 to June 4th 2023, Leetcode has a 30 Days of Javascript Challenge
 These are my submissions and links to the problems.

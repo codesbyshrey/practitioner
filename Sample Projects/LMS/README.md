@@ -1,3 +1,13 @@
+# Library Management System
+
+Library management system project, now merged with its work-in-progress ORV2 variants.
+
+## Contents
+
+- `workinprogress-variant`: Preserved work-in-progress or ORV2 variant files from the merged duplicate project.
+
+## Original README
+
 # Library_Management_System
 A simple and functional Library Management System Implemented in python 3 (Tkinter module)
 # Installation:

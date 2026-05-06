@@ -1,3 +1,13 @@
+# Patientinfosys Workinprogress
+
+Patient information system work-in-progress project with ORV2 variant files merged under a subfolder.
+
+## Contents
+
+- `orv2-variant`: Preserved ORV2 variant files from the merged duplicate project.
+
+## Original README
+
 # Mumbai University Project - Patient Information System
 
 This Patient Information System is based on Tkinter, a graphical user interface provided by the Python programming language and SQLite,
